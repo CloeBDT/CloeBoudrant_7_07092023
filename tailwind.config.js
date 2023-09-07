@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#FFD15B',
+        secondary: '#1B1B1B',
+        tertiary: '#EDEDED',
+        quaternary: '#7A7A7A',
+      },
+      fontFamily: {
+        'anton': ['Anton','sans-serif'],
+        'manrope': ['Manrope','sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

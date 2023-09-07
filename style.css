@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heroImage {
+    background-image: url("assets/images/hero.jpg");
+    background-color: #1B1B1B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
