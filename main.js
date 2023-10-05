@@ -1,5 +1,6 @@
 import { generateDataElement } from "./assets/helpers";
 import { recipes } from "./data/recipes";
+import { recipeSearcher } from "./js/recipeSearcher";
 
 const recipe = recipes[0];
 const recipeSection = document.querySelector("#recettes");
@@ -56,3 +57,10 @@ function createRecipe(recipeData) {
 }
 
 recipes.map((recipe) => recipeSection.appendChild(createRecipe(recipe)));
+
+// FAUSSE BARRE INPUT
+const termedeRecherche = "Poisson";
+// APPEL DE LA FONCTION DE TRI
+const recettesAafficher =  recipeSearcher(termedeRecherche);
+// AFFICHAGE EN CONSOLE DU RESULTAT
+console.log(recettesAafficher)
